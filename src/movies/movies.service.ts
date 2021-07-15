@@ -37,7 +37,6 @@ export class MoviesService {
     const movie = this.getOne(id);
     this.deleteOne(id);
 
-    console.log(movie);
     this.movies.push({ ...movie, ...updateData });
   }
 }
